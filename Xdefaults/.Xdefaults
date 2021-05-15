@@ -1,0 +1,7 @@
+
+URxvt.scrollBar:        false
+URxvt.font:             xft:hack:size=9
+URxvt.cursorColor:      green
+URxvt.shading:          40
+URxvt.transparent:      true
+URxvt.shadinf:          40
