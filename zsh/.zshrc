@@ -294,6 +294,9 @@ add_task() {
 alias ta=task_func
 
 
+# i3
+alias mtl="i3-msg move workspace to output left"
+alias mtr="i3-msg move workspace to output right"
 
 #########3
 bindkey -v
