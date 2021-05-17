@@ -1,0 +1,37 @@
+[volume]
+label='Vold'
+command=/usr/lib/i3blocks/volume
+interval=2
+signal=10
+color=#d70a53
+
+[click]
+full_text=Click me!
+command=echo "Got clicked with button $button"
+color=#F79494
+
+[weather]
+label=⛅
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+color=#A4C2F4
+
+# Query my default IP address only on startup
+[ip]
+label=🌐
+command=echo $(hostname -i | awk '{ print "IP:" $1 }') 
+interval=once
+color=#91E78B
+
+
+[battery]
+command=battery.sh
+interval=10
+
+[date]
+label=📅
+color=#ffffff
+command=echo $( date '+%Y %b %d %I:%M%p' ) 
+interval=5
+
+
