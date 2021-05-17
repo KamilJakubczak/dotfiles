@@ -84,7 +84,7 @@ color_prompt=
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)──}(%B%F{%(#.red.blue)}%n%(#.💀.㉿)%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+    PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)──}(%B%F{%(#.red.blue)}%n%(#.🔥.㉿)%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
     RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
 
     # enable syntax-highlighting
@@ -242,6 +242,7 @@ alias docker_login="docker exec -it db bash"
 
 # Navigation
 alias p='cd ~/Projects'
+
 # vimrc
 alias init=' nvim ~/.config/nvim/init.vim'
 
@@ -278,8 +279,23 @@ alias stopwatch='date1=`date +%s`; while true; do
    echo -ne "$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r";
 done'
 
+# Wheader
+alias wheather='curl wttr.in'
+
 # Python
 alias py_outline='grep -P -n -A1 "(\A|\s)(def|class)\W"'
+
+# TaskWarrior
+add_task() {
+    local arg_1="$1"
+    local arg_1="$2"
+    task add project:$1 $2
+}
+alias ta=task_func
+
+
+
+#########3
 bindkey -v
 
 export EDITOR='/usr/bin/nvim'
