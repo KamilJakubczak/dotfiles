@@ -299,7 +299,7 @@ alias mtl="i3-msg move workspace to output left"
 alias mtr="i3-msg move workspace to output right"
 
 #PATH
-export PATH=$PATH:/home/noxiss/.local/bin
+export PATH=$PATH:/home/noxiss/.local/bin/
 #########
 bindkey -v
 
