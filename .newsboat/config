@@ -1,0 +1,7 @@
+auto-reload yes
+bind-key j down
+bind-key k up
+
+
+browser brave-browser
+macro w set browser "w3m"; open-in-browser; set browser brave-browser
