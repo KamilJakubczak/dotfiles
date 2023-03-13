@@ -209,4 +209,4 @@ exec_always --no-startup-id wal -i $HOME/Pictures/pattern-wallpaper-785x441.png
 # Lockscreen
 set $i3lockwall i3lock -i $HOME/Pictures/pattern-wallpaper-785x441.png -t
 
-bindsym $mod+o exec $i3lockwall
+bindsym $mod+o exec $i3lockwalls

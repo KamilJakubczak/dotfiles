@@ -90,7 +90,7 @@ if [ "$color_prompt" = yes ]; then
     # enable syntax-highlighting
     if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && [ "$color_prompt" = yes ]; then
 . /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+ZSH_HGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 ZSH_HIGHLIGHT_STYLES[default]=none
 ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red,bold
 ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=yan,bold
@@ -279,7 +279,7 @@ alias stopwatch='date1=`date +%s`; while true; do
    echo -ne "$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r";
 done'
 
-# Wheader
+# Wheather
 alias wheather='curl wttr.in'
 
 # Python
@@ -298,10 +298,10 @@ alias ta=task_func
 alias mtl="i3-msg move workspace to output left"
 alias mtr="i3-msg move workspace to output right"
 
-#########3
+#PATH
+export PATH=$PATH:/home/noxiss/.local/bin
+#########
 bindkey -v
 
 export EDITOR='/usr/bin/nvim'
 export VISUAL='/usr/bin/nvim'
-
-
