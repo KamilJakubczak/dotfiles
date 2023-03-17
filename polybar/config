@@ -30,8 +30,8 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
+background = #331e1e1e
+background-alt = #bf1e1e1e
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
@@ -66,10 +66,14 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
+font-3 = Font Awesome 6 Free:pixelsize=12;2 
+font-4 = Font Awesome 6 Free Solid:pixelsize=12;2 
+font-5 = Font Awesome 6 Brands:pixelsize=12;2 
 
-modules-left = bspwm i3
-modules-center = mpd
+modules-left = i3
+modules-center =
 modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+separator = |
 
 tray-position = right
 tray-padding = 2
@@ -85,6 +89,7 @@ tray-padding = 2
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
+;
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -97,7 +102,7 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
@@ -147,6 +152,9 @@ format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
@@ -155,7 +163,7 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %icon%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
@@ -177,6 +185,7 @@ label-urgent-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
+
 
 
 [module/mpd]
@@ -382,8 +391,8 @@ format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
-label = %temperature-c%
-label-warn = %temperature-c%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
 ramp-0 = 

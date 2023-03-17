@@ -3,5 +3,8 @@ bind-key j down
 bind-key k up
 
 
-browser brave-browser
-macro w set browser "w3m"; open-in-browser; set browser brave-browser
+browser brave
+macro w set browser "w3m"; open-in-browser; set browser brave
+macro v set browser "setsid -f mpv"; open-in-browser; set browser brave
+#macro d set browser "setsid -f tsp youtube-dl"; open-in-browser; set browser brave
+macro d set browser "bash /home/noxiss/Documents/Backuped/Scripts/yt_download_in_queue.sh"; open-in-browser; set browser brave
