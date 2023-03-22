@@ -43,6 +43,7 @@ alias ch='exec google-chrome'
 
 # NVIM 
 alias v='nvim' 
+#alias vim='nvim' 
 
 # Django 
 alias rs='python manage.py makemigrations && python manage.py migrate && python manage.py runserver'
@@ -67,7 +68,7 @@ alias init=' nvim ~/.config/nvim/init.vim'
 alias joplin='setsid ~/.joplin/Joplin.AppImage' 
 
 # YouTube downloader 
-alias yt='source ~/Projects/youtube/env/bin/activate && python ~/Projects/youtube/downloader.py' 
+alias yt="bash ~/Codes/Scripts/yt_download.sh"
 
 # Deactivate environmant 
 alias ds='deactivate source' 
@@ -86,7 +87,7 @@ alias sr="screen -r"
 
 # Xrandr 
 alias set_light='xrandr --output eDP-1 --brightness' 
-alias hdmi='xrandr --output HDMI-1 --auto --right-of eDP-1' 
+alias hdmi='xrandr --output HDMI-1 --auto --right-of LVDS-1' 
 alias hdmi2='xrandr --output DP-1 --auto --left-of eDP-1' 
 
 # Other 

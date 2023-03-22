@@ -1,12 +1,12 @@
 syntax on
 set encoding=utf-8
-
+set belloff=all
 
 " Plugs
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
-" Plug 'numirias/semshi'
+
 " Tags
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
@@ -16,9 +16,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'valloric/youcompleteme'
-
-" Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree'
 
@@ -39,7 +36,8 @@ Plug 'w0rp/ale'
 
 Plug 'vimwiki/vimwiki'
 
-" JS
+Plug 'dhruvasagar/vim-table-mode'
+"JS
 Plug 'prettier/vim-prettier'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -67,6 +65,7 @@ set colorcolumn=80
 " Set no wrap
 set nowrap
 
+" Turn off highlighting on search
 set nohlsearch
 
 " Set system clipboard
@@ -145,32 +144,6 @@ nnoremap <leader>nt :NERDTreeToggle <CR>
 let g:SimpylFold_docstring_preview=1
 
 
-""""""""""""""""""
-"" YTC settings ""
-""""""""""""""""""
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
-let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
-let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
-let g:ycm_complete_in_comments = 1 " Completion in comments
-let g:ycm_complete_in_strings = 1 " Completion in string
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-"""""""""""""""""""""""
-"" Vim indent Plug ""
-"""""""""""""""""""""""
-" let g:indent_guides_enable_on_vim_startup = 1
-
-"""""""""""""""""
-"" Indent line ""
-"""""""""""""""""
-" let g:indentLine_enabled = 1
-" let g:indentLine_setColors = 0
-" let g:indentLine_char = 'c'
-" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-
-let g:semshi#excluded_buffers = ['*']
-
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline_powerline_fonts = 1
@@ -199,7 +172,6 @@ let g:tex_comment_nospell=1
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
-set g:PyFlakeOnWrite = 1
 autocmd FileType python map <buffer> <F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F5> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-packloadalla
+packloadall
