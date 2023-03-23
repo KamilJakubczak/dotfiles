@@ -1,6 +1,7 @@
 URxvt.scrollBar:        false
-URxvt.font:             xft:monospace:size=9
-URxvt.cursorColor:      green
+#URxvt.font:             xft:Monospace:size=16
+#urxvt*font: xft:Monospace:size=9
+URxvt.cursorColor:      blue
 URxvt.shading:          10
 URxvt.transparent:      true
 URxvt.shadinf:          40
