@@ -53,6 +53,19 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  -- Nvimtree
+  use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+          'nvim-tree/nvim-web-devicons', -- optional
+      },
+  }
+
+  --  Bufferline
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
+  -- Comments
+  use "terrortylor/nvim-comment"
 
 
 end) 
