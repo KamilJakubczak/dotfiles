@@ -69,6 +69,9 @@ return require('packer').startup(function(use)
   -- Comments
   use "terrortylor/nvim-comment"
 
+  -- Auto closing tags
+  use "jiangmiao/auto-pairs"
+
   -- Vimviki
   use {
     'vimwiki/vimwiki',
