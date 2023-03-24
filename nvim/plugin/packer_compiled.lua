@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -188,10 +193,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  vimwiki = {
+    config = { "\27LJ\2\na\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\bext\b.md\vsyntax\rmarkdown\tpath\15~/vimwiki/\17vimwiki_list\6g\bvim\0" },
+    loaded = true,
+    path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vimwiki
+time([[Config for vimwiki]], true)
+try_loadstring("\27LJ\2\na\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\bext\b.md\vsyntax\rmarkdown\tpath\15~/vimwiki/\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
+time([[Config for vimwiki]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

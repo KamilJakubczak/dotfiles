@@ -1,13 +1,17 @@
 # Use powerline
 USE_POWERLINE="true"
+
 # Source manjaro-zsh-configuration
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
 fi
+
 # Use manjaro zsh prompt
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
+
+bindkey -v
 
 # Shorcuts
 alias cf="cd ~/Documents/Backuped/dotfiles"
@@ -63,9 +67,7 @@ alias p='cd ~/Projects'
 
 # Vimrc 
 alias init=' nvim ~/.config/nvim/init.vim'
-
-#Joplin 
-alias joplin='setsid ~/.joplin/Joplin.AppImage' 
+alias vim='nvim'
 
 # YouTube downloader 
 alias yt="bash ~/Codes/Scripts/yt_download.sh"
@@ -105,7 +107,7 @@ add_task() {
 	local arg_1="$2"
 	task add project:$1 $2 
 }
-alias ta=task_func 
+alias ta=add_task
 
 # i3 
 alias mtl="i3-msg move workspace to output left" 
@@ -113,6 +115,6 @@ alias mtr="i3-msg move workspace to output right"
 
 
 export BROWSER=/usr/bin/brave
-export VISUAL=vim;
-export EDITRO=vim;
+export VISUAL=nvim;
+export EDITRO=nvim;
 
