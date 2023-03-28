@@ -82,6 +82,12 @@ alias sv='source venv/bin/activate'
 
 # Tmux 
 alias t='tmux a -t' 
+alias tls='tmux ls' 
+tmux_kill_session() {
+    local arg1="$1"
+    tmux kill-session -t $1
+}
+alias tks=tmux_kill_session
 
 # Screen 
 alias sls="screen -ls" 

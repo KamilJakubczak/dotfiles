@@ -1,7 +1,11 @@
 URxvt.scrollBar:        false
-#URxvt.font:             xft:Monospace:size=16
-#urxvt*font: xft:Monospace:size=9
-URxvt.cursorColor:      blue
+/* urxvt*font:             xft:DejaVuSerifCondensed:size=12 */
+/* urxvt*font:             xft:NotoSerifSemiCondensedNerdFont:size=12 */
+urxvt*font:             xft:TerminessTTFNerdFontMono:size=12
+/* urxvt*font:             xft:Noto Sans Regular Nerd Font:size=10 */
+URxvt.cursorColor:      cyan
 URxvt.shading:          10
 URxvt.transparent:      true
 URxvt.shadinf:          40
+/usr/share/fonts/TTF/Terminess (TTF) Nerd Font Complete Mono.ttf: TerminessTTF Nerd Font Mono:style=Medium
+
