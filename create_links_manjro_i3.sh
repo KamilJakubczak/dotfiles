@@ -11,3 +11,5 @@ ln -s  `pwd`/.zshrc ~/
 ln -s  `pwd`/.taskrc ~/
 ln -s  `pwd`/.Xdefaults ~/
 ln -s  `pwd`/.nbrc ~/
+ln -s  `pwd`/ncmpcpp ~/.config
+ln -s  `pwd`/mpd ~/.config
