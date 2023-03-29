@@ -22,39 +22,15 @@ return require('packer').startup(function(use)
   --  Treesitter
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-
   --undotree
   use('mbbill/undotree')
 
   -- GIT
   use('tpope/vim-fugitive')
- 
-  -- LSP Autocompletion
-  -- use {
-  -- 	  'VonHeikemen/lsp-zero.nvim',
-  -- 	  branch = 'v1.x',
-  -- 	  requires = {
-  -- 		  -- LSP Support
-  -- 		  {'neovim/nvim-lspconfig'},             -- Required
-  -- 		  {'williamboman/mason.nvim'},           -- Optional
-  -- 		  {'williamboman/mason-lspconfig.nvim'}, -- Optional
-  --
-  -- 		  -- Autocompletion
-  -- 		  {'hrsh7th/nvim-cmp'},         -- Required
-  -- 		  {'hrsh7th/cmp-nvim-lsp'},     -- Required
-  -- 		  {'hrsh7th/cmp-buffer'},       -- Optional
-  -- 		  {'hrsh7th/cmp-path'},         -- Optional
-  -- 		  {'saadparwaiz1/cmp_luasnip'}, -- Optional
-  -- 		  {'hrsh7th/cmp-nvim-lua'},     -- Optional
-  --
-  -- 		  -- Snippets
-  -- 		  {'L3MON4D3/LuaSnip'},             -- Required
-  -- 		  {'rafamadriz/friendly-snippets'}, -- Optional
-  -- 	  }
-  -- }
 
   -- COC
   use {'neoclide/coc.nvim', branch = 'release'}
+
   -- Nvimtree
   use {
       'nvim-tree/nvim-tree.lua',
@@ -92,7 +68,6 @@ return require('packer').startup(function(use)
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
   -- whichkey
-  -- Lua
   use {
       "folke/which-key.nvim",
       config = function()
@@ -100,5 +75,8 @@ return require('packer').startup(function(use)
           vim.o.timeoutlen = 300
           require("which-key").setup {}
       end }
+
+    -- vim surround
+    use 'tpope/vim-surround'
 
 end) 
