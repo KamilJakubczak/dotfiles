@@ -79,4 +79,14 @@ return require('packer').startup(function(use)
     -- vim surround
     use 'tpope/vim-surround'
 
+    use {
+        "nvim-neotest/neotest",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
+            "antoinemadec/FixCursorHold.nvim"
+        }
+    }
+    use 'nvim-neotest/neotest-python'
+
 end) 

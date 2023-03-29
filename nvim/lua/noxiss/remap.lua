@@ -68,7 +68,7 @@ local fast_inserts = {
 local debugging = {
     d = {
         name = "+Debug",
-	m = {":lua require('dapui').toggle()<CR>", "Debbuging GUI" },
+        m = {":lua require('dapui').toggle()<CR>", "Debbuging GUI" },
         p = {":lua require('dap').toggle_breakpoint()<CR>", "Toggle break point"},
         r = {":lua require('dap').continue()<CR>", "Run debugging"},
         i = {":lua require('dap').step_into()<CR>", "Step into"},
@@ -76,6 +76,17 @@ local debugging = {
             v = {":lua require('dap').step_over()<CR>", "Step over"},
             u = {":lua require('dap').step_out()<CR>", "Step out"},
         }
+    }
+}
+
+local testing = {
+    t = {
+        name = "+Test",
+        a = {':lua require("neotest").run.run()<cr>', "Test all" },
+        c = {':lua require("neotest").run.run(vim.fn.expand("%"))<cr>', "Test current files"},
+        n = {':lua require("neotest").run.attach()<cr>', "Attach test"},
+        o = {':lua require("neotest").output_panel.toggle()<cr>', "Toggle output panel"},
+        s = {':lua require("neotest").summary.toggle()<cr>', "Toggle summary"},
     }
 }
 
@@ -91,6 +102,7 @@ local mode_i = {mode='i'}
 local mode_v = {mode='v'}
 
 wk.register(debugging, leader)
+wk.register(testing, leader)
 wk.register(nerdtree, leader)
 wk.register(search_and_replace, leader)
 wk.register(comments)

@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/auto-pairs",
@@ -88,6 +93,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
+  },
+  neotest = {
+    loaded = true,
+    path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/neotest",
+    url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-python"] = {
+    loaded = true,
+    path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/neotest-python",
+    url = "https://github.com/nvim-neotest/neotest-python"
   },
   ["nvim-comment"] = {
     loaded = true,
@@ -160,7 +175,7 @@ _G.packer_plugins = {
     url = "https://github.com/tpope/vim-surround"
   },
   vimwiki = {
-    config = { "\27LJ\2\na\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\vsyntax\rmarkdown\bext\b.md\tpath\15~/vimwiki/\17vimwiki_list\6g\bvim\0" },
+    config = { "\27LJ\2\na\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\bext\b.md\tpath\15~/vimwiki/\vsyntax\rmarkdown\17vimwiki_list\6g\bvim\0" },
     loaded = true,
     path = "/home/noxiss/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
@@ -180,7 +195,7 @@ try_loadstring("\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\
 time([[Config for which-key.nvim]], false)
 -- Config for: vimwiki
 time([[Config for vimwiki]], true)
-try_loadstring("\27LJ\2\na\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\vsyntax\rmarkdown\bext\b.md\tpath\15~/vimwiki/\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
+try_loadstring("\27LJ\2\na\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\3\bext\b.md\tpath\15~/vimwiki/\vsyntax\rmarkdown\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
 time([[Config for vimwiki]], false)
 
 _G._packer.inside_compile = false
