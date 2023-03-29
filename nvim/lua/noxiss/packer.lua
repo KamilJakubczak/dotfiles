@@ -74,16 +74,31 @@ return require('packer').startup(function(use)
 
   -- Vimviki
   use {
-    'vimwiki/vimwiki',
-    config = function()
-        vim.g.vimwiki_list = {
-            {
-                path = '~/vimwiki/',
-                syntax = 'markdown',
-                ext = '.md',
-            }
-        }
-    end
-}
+      'vimwiki/vimwiki',
+      config = function()
+          vim.g.vimwiki_list = {
+              {
+                  path = '~/vimwiki/',
+                  syntax = 'markdown',
+                  ext = '.md',
+              }
+          }
+      end
+  }
+
+  -- debuigging
+  use 'mfussenegger/nvim-dap'
+  use 'mfussenegger/nvim-dap-python'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
+  -- whichkey
+  -- Lua
+  use {
+      "folke/which-key.nvim",
+      config = function()
+          vim.o.timeout = true
+          vim.o.timeoutlen = 300
+          require("which-key").setup {}
+      end }
 
 end) 

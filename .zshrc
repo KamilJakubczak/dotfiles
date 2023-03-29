@@ -14,7 +14,10 @@ fi
 bindkey -v
 
 # Shorcuts
-alias cf="cd ~/Documents/Backuped/dotfiles"
+alias cf="cd ~/Codes/dotfiles"
+
+# ZSH config
+alias zcf="nvim ~/.zshrc"
 
 #Wheather
 alias wheather='curl wttr.in'
@@ -118,6 +121,10 @@ alias ta=add_task
 # i3 
 alias mtl="i3-msg move workspace to output left" 
 alias mtr="i3-msg move workspace to output right"
+
+# Downloaders
+alias m_download="bash ~/Codes/Scripts/yt_download_mp3.sh"
+alias y_download="bash ~/Codes/Scripts/yt_download.sh"
 
 
 export BROWSER=/usr/bin/brave

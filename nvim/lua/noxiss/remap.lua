@@ -54,7 +54,7 @@ vim.keymap.set("n", "<C-K>", "<C-W><C-K>")
 vim.keymap.set("n", "<C-L>", "<C-W><C-L>")
 vim.keymap.set("n", "<C-H>", "<C-W><C-H>")
 
-vim.keymap.set("n", "<M-j>", ":bp<cr>")
+vim.keymap.set("n", "<M-j>", ":bp<cr>", {desc="Previous buffer"})--Previous buffer
 vim.keymap.set("n", "<M-k>", ":bn<cr>")
 vim.keymap.set("n", "<M-d>", ":bd<cr>")
 
@@ -64,3 +64,19 @@ vim.keymap.set("n", "<leader>nt", ":NvimTreeToggle <cr>")
 
 -- Nvim commetn
 vim.keymap.set("n", "<C-_>", ":CommentToggle <cr>") -- <C-_> workaround for <C-/> on linux
+
+-- DAP debugging short cuts
+
+vim.keymap.set("n", "<leader>dm", ":lua require('dapui').toggle()<CR>" )
+vim.keymap.set("n", "<leader>dp", ":lua require('dap').toggle_breakpoint()<CR>" )
+vim.keymap.set("n", "<leader>dr", ":lua require('dap').continue()<CR>")
+vim.keymap.set("n", "<Leader>dov", ":lua require('dap').step_over()<CR>")
+vim.keymap.set("n", "<Leader>di", ":lua require('dap').step_into()<CR>")
+vim.keymap.set("n", "<Leader>dou", ":lua require('dap').step_out()<CR>") 
+
+local wk = require("which-key")
+local mappings = {
+    q = {":q", "Quit"}
+}
+local opts = {prefix = '<leader>'}
+wk.register(mappings, opts)
