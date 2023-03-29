@@ -13,3 +13,4 @@ ln -s  `pwd`/.Xdefaults ~/
 ln -s  `pwd`/.nbrc ~/
 ln -s  `pwd`/ncmpcpp ~/.config
 ln -s  `pwd`/mpd ~/.config
+ln -s  `pwd`/.gitconfig ~/
