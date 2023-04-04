@@ -5,3 +5,5 @@
 	defaultBranch = master
 [pager]
 	branch = false
+[credentail]
+	provider = generic
