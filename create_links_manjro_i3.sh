@@ -14,3 +14,4 @@ ln -s  `pwd`/.nbrc ~/
 ln -s  `pwd`/ncmpcpp ~/.config
 ln -s  `pwd`/mpd ~/.config
 ln -s  `pwd`/.gitconfig ~/
+ln -s  `pwd`/.urxvt/ext/resize-font ~/.urxvt/ext/resize-font

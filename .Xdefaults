@@ -7,5 +7,9 @@ URxvt.cursorColor:      cyan
 URxvt.shading:          10
 URxvt.transparent:      true
 URxvt.shadinf:          40
-/usr/share/fonts/TTF/Terminess (TTF) Nerd Font Complete Mono.ttf: TerminessTTF Nerd Font Mono:style=Medium
 
+
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
