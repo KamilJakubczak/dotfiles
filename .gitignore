@@ -1,1 +1,5 @@
 /plugged/
+*.db
+tmux/plugins/
+mpd/mpd.pid
+mpd/mpdstate

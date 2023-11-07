@@ -1,16 +1,23 @@
 # Use powerline
 USE_POWERLINE="true"
+
 # Source manjaro-zsh-configuration
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
 fi
+
 # Use manjaro zsh prompt
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+bindkey -v
+
 # Shorcuts
-alias cf="cd ~/Documents/Backuped/dotfiles"
+alias cf="cd ~/Codes/dotfiles"
+
+# ZSH config
+alias zcf="nvim ~/.zshrc"
 
 #Wheather
 alias wheather='curl wttr.in'
@@ -43,6 +50,7 @@ alias ch='exec google-chrome'
 
 # NVIM 
 alias v='nvim' 
+#alias vim='nvim' 
 
 # Django 
 alias rs='python manage.py makemigrations && python manage.py migrate && python manage.py runserver'
@@ -62,12 +70,10 @@ alias p='cd ~/Projects'
 
 # Vimrc 
 alias init=' nvim ~/.config/nvim/init.vim'
-
-#Joplin 
-alias joplin='setsid ~/.joplin/Joplin.AppImage' 
+alias vim='nvim'
 
 # YouTube downloader 
-alias yt='source ~/Projects/youtube/env/bin/activate && python ~/Projects/youtube/downloader.py' 
+alias yt="bash ~/Codes/Scripts/yt_download.sh"
 
 # Deactivate environmant 
 alias ds='deactivate source' 
@@ -79,6 +85,12 @@ alias sv='source venv/bin/activate'
 
 # Tmux 
 alias t='tmux a -t' 
+alias tls='tmux ls' 
+tmux_kill_session() {
+    local arg1="$1"
+    tmux kill-session -t $1
+}
+alias tks=tmux_kill_session
 
 # Screen 
 alias sls="screen -ls" 
@@ -86,7 +98,7 @@ alias sr="screen -r"
 
 # Xrandr 
 alias set_light='xrandr --output eDP-1 --brightness' 
-alias hdmi='xrandr --output HDMI-1 --auto --right-of eDP-1' 
+alias hdmi='xrandr --output HDMI-1 --auto --right-of LVDS-1' 
 alias hdmi2='xrandr --output DP-1 --auto --left-of eDP-1' 
 
 # Other 
@@ -104,14 +116,18 @@ add_task() {
 	local arg_1="$2"
 	task add project:$1 $2 
 }
-alias ta=task_func 
+alias ta=add_task
 
 # i3 
 alias mtl="i3-msg move workspace to output left" 
 alias mtr="i3-msg move workspace to output right"
 
+# Downloaders
+alias m_download="bash ~/Codes/Scripts/yt_download_mp3.sh"
+alias y_download="bash ~/Codes/Scripts/yt_download.sh"
+
 
 export BROWSER=/usr/bin/brave
-export VISUAL=vim;
-export EDITRO=vim;
+export VISUAL=nvim;
+export EDITRO=nvim;
 

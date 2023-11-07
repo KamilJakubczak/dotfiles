@@ -1,0 +1,7 @@
+[user]
+	email = kamiljakubczak@outlook.com
+	name = kamiljakubczak
+[init]
+	defaultBranch = master
+[pager]
+	branch = false
