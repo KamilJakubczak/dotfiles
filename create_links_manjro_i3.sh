@@ -1,6 +1,5 @@
 #! /bin/bash
-
-#ln -s  `pwd`/tmux/tmux.conf ~/.config/tmux/
+ln -s  `pwd`/tmux/ ~/.config/
 ln -s  `pwd`/nvim/ ~/.config/
 
 ln -s  `pwd`/.i3/config ~/.i3/config
