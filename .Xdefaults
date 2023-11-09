@@ -1,8 +1,9 @@
 URxvt.scrollBar:        false
 /* urxvt*font:             xft:DejaVuSerifCondensed:size=12 */
 /* urxvt*font:             xft:NotoSerifSemiCondensedNerdFont:size=12 */
-urxvt*font:             xft:TerminessTTFNerdFontMono:size=12
-/* urxvt*font:             xft:Noto Sans Regular Nerd Font:size=10 */
+/* urxvt*font:             xft:TerminessTTFNerdFontMono:size=12 */
+/* urxvt*font:             xft:TTF Hack Nerd:size=12 */ 
+URxvt.font:             xft:Hack:size=12
 URxvt.cursorColor:      cyan
 URxvt.shading:          10
 URxvt.transparent:      true

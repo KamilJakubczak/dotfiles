@@ -1,14 +1,10 @@
 # News
-https://www.bankier.pl/rss/wiadomosci.xml
-https://www.money.pl/rss/
-https://www.rp.pl/rss_main
-
-
 https://tatromaniak.pl/feed/
 
 # Tech
 --TECH--
 https://pcr.apple.com/id1264567358 "tech"
+https://niebezpiecznik.substack.com/feed "tech"
 https://feeds.feedburner.com/niebezpiecznik.rss "tech"
 https://blog.python.org/feeds/posts/default?alt=rss "tech" "python"
 https://forbot.pl/blog/kanal-rss "tech"
@@ -22,7 +18,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw "te
 
 # Climbing
 --CLIMBING--
-https://www.reddit.com/r/climbing.rss "climbing" "reddit" "~REDDIT/climbing"
 
 --CLIMBING-VIDEOS--
 

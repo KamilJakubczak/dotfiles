@@ -1,4 +1,6 @@
 auto-reload yes
+reload-threads 100
+
 bind-key j down
 bind-key k up
 

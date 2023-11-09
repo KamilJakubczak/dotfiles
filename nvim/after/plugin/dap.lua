@@ -1,4 +1,5 @@
-require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
+require('dap-python').setup('~/Projects/alab/cps-pinmeto-api/venv/bin/python')
+-- require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
 
 require("dapui").setup()
 
