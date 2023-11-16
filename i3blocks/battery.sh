@@ -1,4 +1,14 @@
 #!/bin/bash
+#
+case $BLOCK_BUTTON in
+    3) pgrep -x dunst >/dev/null && notify-send " Battery module" " : discharging
+: not charging
+: stagnant charge
+: charging
+: charged
+: battery very low!
+- Text color reflects charge left" ;;
+esac
 
 BAT=$(acpi -b | grep -E -o '[0-9][0-9]?%')
 

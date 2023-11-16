@@ -5,9 +5,22 @@ interval=2
 signal=10
 color=#d70a53
 
-[click]
-full_text=Click me!
-command=echo "Got clicked with button $button"
+[capswap]
+full_text=Swap Caps
+command=~/programms/dotfiles/i3blocks/capswap.sh
+color=#66666
+
+
+[alab]
+label=   
+command=~/programms/dotfiles/i3blocks/task_work.sh
+interval=30
+color=#F79494
+
+[newsboat]
+label=   
+command=~/programms/dotfiles/i3blocks/newsboat.sh
+interval=600
 color=#F79494
 
 [weather]

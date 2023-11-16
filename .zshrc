@@ -66,10 +66,11 @@ alias drdb='docker-compose run db'
 alias docker_login="docker exec -it db bash" 
 
 # Navigation 
-alias p='cd ~/Projects'
+alias p='cd ~/alab/backuped/projects'
+
+alias dot='cd ~/programms/dotfiles'
 
 # Vimrc 
-alias init=' nvim ~/.config/nvim/init.vim'
 alias vim='nvim'
 
 # YouTube downloader 
@@ -80,7 +81,7 @@ alias ds='deactivate source'
 
 # PGADMIN 
 alias pgadmin='setsid /usr/pgadmin4/bin/pgadmin4' 
-alias addmonitor='xrandr --output HDMI-1 --auto --right-of LVDS-1' 
+alias addmonitor='xrandr --output HDMI-1 --auto --right-of eDP-1' 
 alias sv='source venv/bin/activate'
 
 # Tmux 
@@ -127,7 +128,12 @@ alias m_download="bash ~/Codes/Scripts/yt_download_mp3.sh"
 alias y_download="bash ~/Codes/Scripts/yt_download.sh"
 
 
+# Python environments
+alias scps="source ~/alab/venvs/cps/bin/activate"
+
 export BROWSER=/usr/bin/brave
 export VISUAL=nvim;
 export EDITRO=nvim;
+
+source /usr/share/nvm/init-nvm.sh
 

@@ -9,15 +9,21 @@ https://feeds.feedburner.com/niebezpiecznik.rss "tech"
 https://blog.python.org/feeds/posts/default?alt=rss "tech" "python"
 https://forbot.pl/blog/kanal-rss "tech"
 https://cert.pl/rss.xml "tech"
+https://news.ycombinator.com/rss "tech"
 
 --TECH-VIDEOS--
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ "tech" "yt"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ "tech" "yt" "python"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw "tech" "yt"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVhQ2NnY5Rskt6UjCUkJ_DA "tech" "yt" "python"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "tech" "yt" "linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw "tech" "yt" "vim"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ "tech" "yt" "ThePrimeTime"
 
 
 # Climbing
 --CLIMBING--
+https://wspinanie.pl/feed/ "climbing" "~wspinanie.pl"
 
 --CLIMBING-VIDEOS--
 
@@ -25,6 +31,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC8eNyF9eYwgr_K-Nl4gSHWw "yo
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQvq-0fss4lNrmIz7gcPLtQ "youtube" "climbing" "~YT-HOWNOT2"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8VovxmJ6Io9l3jQCsOBRzQ "youtube" "climbing" "~YT-Bartek Wnęk - Alpinizm"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_gSotrFVZ_PiAxo3fTQVuQ "youtube" "climbing" "~YT-Magnus MIdtbo"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVDUdoLZjGZQee74PqtFEvg "youtube" "~Rope Access Channel"
 #
 ## Video
 --VIDEOS--

@@ -10,14 +10,16 @@ return require('packer').startup(function(use)
 
   --Fuzzy finder
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
   -- Color scheme
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
-  vim.cmd('colorscheme rose-pine')
+  -- use({ 'rose-pine/neovim', as = 'rose-pine' })
+  -- vim.cmd('colorscheme rose-pine')
+
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   --  Treesitter
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
