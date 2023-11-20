@@ -131,6 +131,8 @@ alias y_download="bash ~/Codes/Scripts/yt_download.sh"
 # Python environments
 alias scps="source ~/alab/venvs/cps/bin/activate"
 
+source ~/scripts/remind
+
 export BROWSER=/usr/bin/brave
 export VISUAL=nvim;
 export EDITRO=nvim;
