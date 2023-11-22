@@ -424,4 +424,4 @@ exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
 
 # PYWAL
-exec_always --no-startup-id wal -i $HOME/.i3/wallpaper.jpg.jpg
+exec_always --no-startup-id wal -i $HOME/.i3/wallpaper.jpg
