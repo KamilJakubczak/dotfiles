@@ -4,84 +4,102 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
 
-  --Fuzzy finder
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
+    --Fuzzy finder
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
+        -- or                            , branch = '0.1.x',
+        requires = { { 'nvim-lua/plenary.nvim' } }
+    }
 
-  -- Color scheme
-  -- use({ 'rose-pine/neovim', as = 'rose-pine' })
-  -- vim.cmd('colorscheme rose-pine')
+    -- Harpoon
+    use { "theprimeagen/harpoon" }
 
-  use { "catppuccin/nvim", as = "catppuccin" }
+    --use {"neovim/nvim-lspconfig"}
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v3.x',
+        requires = {
+            --- Uncomment these if you want to manage LSP servers from neovim
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
 
-  --  Treesitter
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use({
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    after = "nvim-treesitter",
-    requires = "nvim-treesitter/nvim-treesitter",
-  })
+            -- LSP Support
+            { 'neovim/nvim-lspconfig' },
+            -- Autocompletion
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'L3MON4D3/LuaSnip' },
+        }
+    }
 
-  --undotree
-  use('mbbill/undotree')
 
-  -- GIT
-  use('tpope/vim-fugitive')
+    use { "catppuccin/nvim", as = "catppuccin" }
 
-  -- COC
-  use {'neoclide/coc.nvim', branch = 'release'}
+    --  Treesitter
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    use({
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        after = "nvim-treesitter",
+        requires = "nvim-treesitter/nvim-treesitter",
+    })
 
-  -- Nvimtree
-  use {
-      'nvim-tree/nvim-tree.lua',
-      requires = {
-          'nvim-tree/nvim-web-devicons', -- optional
-      },
-  }
+    --undotree
+    use('mbbill/undotree')
 
-  --  Bufferline
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+    -- GIT
+    use('tpope/vim-fugitive')
 
-  -- Comments
-  use "terrortylor/nvim-comment"
+    -- COC
+    -- use {'neoclide/coc.nvim', branch = 'release'}
 
-  -- Auto closing tags
-  use "jiangmiao/auto-pairs"
+    -- Nvimtree
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional
+        },
+    }
 
-  -- Vimviki
-  use {
-      'vimwiki/vimwiki',
-      config = function()
-          vim.g.vimwiki_list = {
-              {
-                  path = '~/vimwiki/',
-                  syntax = 'markdown',
-                  ext = '.md',
-              }
-          }
-      end
-  }
+    --  Bufferline
+    use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 
-  -- debuigging
-  use 'mfussenegger/nvim-dap'
-  use 'mfussenegger/nvim-dap-python'
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    -- Comments
+    use "terrortylor/nvim-comment"
 
-  -- whichkey
-  use {
-      "folke/which-key.nvim",
-      config = function()
-          vim.o.timeout = true
-          vim.o.timeoutlen = 300
-          require("which-key").setup {}
-      end }
+    -- Auto closing tags
+    use "jiangmiao/auto-pairs"
+
+    -- Vimviki
+    use {
+        'vimwiki/vimwiki',
+        config = function()
+            vim.g.vimwiki_list = {
+                {
+                    path = '~/vimwiki/',
+                    syntax = 'markdown',
+                    ext = '.md',
+                }
+            }
+        end
+    }
+
+    -- debuigging
+    use 'mfussenegger/nvim-dap'
+    use 'mfussenegger/nvim-dap-python'
+    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+
+    -- whichkey
+    use {
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+            require("which-key").setup {}
+        end }
 
     -- vim surround
     use 'tpope/vim-surround'
@@ -95,5 +113,4 @@ return require('packer').startup(function(use)
         }
     }
     use 'nvim-neotest/neotest-python'
-
-end) 
+end)
