@@ -57,7 +57,7 @@ local text_movements = {
 local fast_inserts = {
  
     ["AA"] =  {"<ESC>A", "Go to end of line"},
-    [";<cr>"] = {"<ESC>A;<cr>", "Add ; to end of line"},
+    -- [";;"] = {"<mo>A;<ESC>", "Add ; to end of line"},
     [":<cr>"] = {"<ESC>A:<cr>", "Add  to the end of line"},
     ["}<cr>"] = {"<ESC>A}<cr>", "Add  to the end of line"},
     [")<cr>"] = {"<ESC>A)<cr>", "Add  to the end of line"},
@@ -108,9 +108,8 @@ wk.register(search_and_replace, leader)
 wk.register(comments)
 wk.register(window_nav)
 wk.register(buffer_nav)
-wk.register(fast_inserts, mode_i)
+wk.register(fast_inserts)
 wk.register(text_movements, mode_v)
-
 
 
 

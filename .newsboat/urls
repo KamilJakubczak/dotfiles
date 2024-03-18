@@ -9,7 +9,7 @@ https://feeds.feedburner.com/niebezpiecznik.rss "tech"
 https://blog.python.org/feeds/posts/default?alt=rss "tech" "python"
 https://forbot.pl/blog/kanal-rss "tech"
 https://cert.pl/rss.xml "tech"
-https://news.ycombinator.com/rss "tech"
+https://zaufanatrzeciastrona.pl/feed/ "tech" "~Zaufana trzecia strona"
 
 --TECH-VIDEOS--
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ "tech" "yt"
@@ -19,11 +19,16 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCVhQ2NnY5Rskt6UjCUkJ_DA "te
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "tech" "yt" "linux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw "tech" "yt" "vim"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ "tech" "yt" "ThePrimeTime"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYeiozh-4QwuC1sjgCmB92w "tevh" "yt" "DevOps Tools"
 
+--HAM RADIO--
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUIMY6yGLBv1eN918qNAaag "ham" "yt" "Sierra Echo"
 
+--Running--
+https://bieganie.pl/feed/ "running"
 # Climbing
 --CLIMBING--
-https://wspinanie.pl/feed/ "climbing" "~wspinanie.pl"
+https://wspinanie.pl/feed/ "climbing"
 
 --CLIMBING-VIDEOS--
 
@@ -45,6 +50,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCzn6vAfspIcagLax1fck_jw "yo
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUMSUH7WEgDZjH6xrq9-Ubg "youtube" "~YT-Ekwipunek dzwgany codziennie"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5B3p-GePbMo3wJihtF_Huw "youtube" "~YT-Adventurer - szkolenia survivalowe"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCq9zLQpsq5RoKMVXWTASaGQ "youtube" "~YT-Piotr Horzela Opowiada"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKBUeKsqzKWSxp4pahxljBw "youtibe" "~YT-Wildbeare"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCTWi54WVT36cJ6XfOz8WBGA "youtube"
 #
 # Shoot

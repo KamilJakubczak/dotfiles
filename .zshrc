@@ -24,7 +24,7 @@ alias wheather='curl wttr.in'
 
 # Keyboard layout
 alias pl="setxkbmap -layout pl"
-alias en="setxkbmap -layout pl"
+alias en="setxkbmap -layout en-us"
 
 # LAMPP 
 alias strlamp='sudo /opt/lampp/lampp start'
@@ -130,6 +130,9 @@ alias y_download="bash ~/Codes/Scripts/yt_download.sh"
 
 # Python environments
 alias scps="source ~/alab/venvs/cps/bin/activate"
+
+
+alias ep="export PYTHONPATH=.:$PYTHONPATH"
 
 source ~/scripts/remind
 
