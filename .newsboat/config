@@ -12,3 +12,9 @@ macro w set browser "w3m"; open-in-browser; set browser brave
 macro v set browser "setsid -f mpv"; open-in-browser; set browser brave
 #macro d set browser "setsid -f tsp youtube-dl"; open-in-browser; set browser brave
 macro d set browser "bash ~/Codes/Scripts/yt_download.sh"; open-in-browser; set browser brave
+
+
+# Formating
+# highlight feedlist "[║│]" yellow default bold
+# highlight feedlist "╠═.*" yellow default bold
+feedlist-format "%?T?║%4i %n %8u (%T) %t &╠═════════════════════════════════════════════════════%t?"

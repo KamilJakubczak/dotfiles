@@ -1,17 +1,17 @@
-# News
-https://tatromaniak.pl/feed/
+news
+https://tatromaniak.pl/feed/ news
+https://aleksandrow-lodzki.pl/feed/ news
 
-# Tech
---TECH--
-https://pcr.apple.com/id1264567358 "tech"
-https://niebezpiecznik.substack.com/feed "tech"
-https://feeds.feedburner.com/niebezpiecznik.rss "tech"
-https://blog.python.org/feeds/posts/default?alt=rss "tech" "python"
-https://forbot.pl/blog/kanal-rss "tech"
-https://cert.pl/rss.xml "tech"
-https://zaufanatrzeciastrona.pl/feed/ "tech" "~Zaufana trzecia strona"
+tech
+https://pcr.apple.com/id1264567358 tech
+https://niebezpiecznik.substack.com/feed tech
+https://feeds.feedburner.com/niebezpiecznik.rss tech
+https://blog.python.org/feeds/posts/default?alt=rss tech python
+https://forbot.pl/blog/kanal-rss tech
+https://cert.pl/rss.xml tech
+https://zaufanatrzeciastrona.pl/feed/ tech
 
---TECH-VIDEOS--
+tech_videos
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ "tech" "yt"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ "tech" "yt" "python"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw "tech" "yt"
@@ -21,37 +21,41 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw "te
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ "tech" "yt" "ThePrimeTime"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYeiozh-4QwuC1sjgCmB92w "tevh" "yt" "DevOps Tools"
 
---HAM RADIO--
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUIMY6yGLBv1eN918qNAaag "ham" "yt" "Sierra Echo"
+HAM-RADIO
+https://sierraecho.pl/feed/ ham
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUIMY6yGLBv1eN918qNAaag ham yt Sierra Echo
 
---Running--
-https://bieganie.pl/feed/ "running"
-# Climbing
---CLIMBING--
-https://wspinanie.pl/feed/ "climbing"
+Running
+https://bieganie.pl/feed/ running
 
---CLIMBING-VIDEOS--
+Climbing
+https://wspinanie.pl/feed/ climbing
 
+Climbing_videos
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8eNyF9eYwgr_K-Nl4gSHWw "youtube" "climbing" "~YT-Adam Ondra"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQvq-0fss4lNrmIz7gcPLtQ "youtube" "climbing" "~YT-HOWNOT2"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8VovxmJ6Io9l3jQCsOBRzQ "youtube" "climbing" "~YT-Bartek Wnęk - Alpinizm"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_gSotrFVZ_PiAxo3fTQVuQ "youtube" "climbing" "~YT-Magnus MIdtbo"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVDUdoLZjGZQee74PqtFEvg "youtube" "~Rope Access Channel"
-#
-## Video
---VIDEOS--
-# Video
-https://www.youtube.com/feeds/videos.xml?channel_id=UC0CBvHexnYGZ3ZzKYhwjIFQ "youtube" "~YT-Universal Survival"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFbKxMUkYIHhVvo9Ag0EfVw "youtube" "~YT-Marcin Bannot"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC5FWImlh1axobNU541SIHHg "youtube" "~YT-BNT"
-https://www.youtube.com/feeds/videos.xml?channel_id=UChFr0plZ7_23KlTMFEKlMlA "youtube" "~YT-Szczyoutubeomaniak"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCX92mVE0rfBDSyRticjqzIA "youtube" "~YT-Bushcraftowy"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCzn6vAfspIcagLax1fck_jw "youtube" "tech" "~YT-Pasja informatyki"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUMSUH7WEgDZjH6xrq9-Ubg "youtube" "~YT-Ekwipunek dzwgany codziennie"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC5B3p-GePbMo3wJihtF_Huw "youtube" "~YT-Adventurer - szkolenia survivalowe"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCq9zLQpsq5RoKMVXWTASaGQ "youtube" "~YT-Piotr Horzela Opowiada"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCKBUeKsqzKWSxp4pahxljBw "youtibe" "~YT-Wildbeare"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCTWi54WVT36cJ6XfOz8WBGA "youtube"
-#
-# Shoot
-https://ksdziesiatka.pl/old/10rss "~KS10"
+
+Survival/Outdoot/Bushcraft
+https://www.youtube.com/feeds/videos.xml?channel_id=UC0CBvHexnYGZ3ZzKYhwjIFQ yt "~YT-Universal Survival"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfT6eNMMsNg8ALosqgIOIMA yt "~Chris Ferrari Survival"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdyKvCg9DRw3dAn8ltjR4tA yt "~White Wolves TV"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCf0p7v78ATmKZwqjTAXgXwQ yt "~Survivaltech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUMSUH7WEgDZjH6xrq9-Ubg yt "~YT-Ekwipunek dzwgany codziennie"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5B3p-GePbMo3wJihtF_Huw yt "~YT-Adventurer - szkolenia survivalowe"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCO6SkRtC59A7VTi1yHv2juw yt "~Partyzanci Lubelszczyny"
+
+Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFbKxMUkYIHhVvo9Ag0EfVw yt "~YT-Marcin Bannot"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5FWImlh1axobNU541SIHHg yt "~YT-BNT"
+https://www.youtube.com/feeds/videos.xml?channel_id=UChFr0plZ7_23KlTMFEKlMlA yt "~YT-Szczyoutubeomaniak"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCX92mVE0rfBDSyRticjqzIA yt "~YT-Bushcraftowy"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzn6vAfspIcagLax1fck_jw yt "tech" "~YT-Pasja informatyki"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCq9zLQpsq5RoKMVXWTASaGQ yt "~YT-Piotr Horzela Opowiada"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKBUeKsqzKWSxp4pahxljBw yt "~YT-Wildbeare"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCTWi54WVT36cJ6XfOz8WBGA yt "~Tomasz Drwal"
+
+Shooting
+https://ksdziesiatka.pl/old/feed/ shooting

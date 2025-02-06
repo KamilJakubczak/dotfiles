@@ -7,3 +7,5 @@
 	branch = false
 [credentail]
 	provider = generic
+[core]
+	autocrlf = input

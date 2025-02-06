@@ -1,9 +1,9 @@
+local wk = require("which-key")
+
 vim.g.mapleader = " "
 
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
-
 
 -- Replace current word
 vim.keymap.set("n", "<leader>sw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {desc = "Replace current word"})
@@ -12,7 +12,6 @@ vim.keymap.set("n", "<leader>ss", [[:%s///g<Left><Left><Left>]], {desc = "Replac
 
 -- Keep curson at same row after J
 vim.keymap.set("n", "J", "mzJ`z")
-
 
 -- Keep coursour in the middle of screen when Ctrl+d
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -26,12 +25,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- Paste and keep buffered word
 vim.keymap.set("x","<leader>p", "\"_dP")
 
-
 -- Yank and delete into clipboard
 vim.keymap.set("n", "<leader>y","\"+y")
 vim.keymap.set("v", "<leader>y","\"+y")
 vim.keymap.set("n", "<leader>Y","\"+Y")
-
 
 vim.keymap.set("n", "<leader>d","\"_d")
 vim.keymap.set("v", "<leader>d","\"_d")
@@ -46,11 +43,14 @@ vim.keymap.set("n", "<M-j>", ":bp<cr>", {desc="Previous buffer"})
 vim.keymap.set("n", "<M-k>", ":bn<cr>", {desc="Next buffer"})
 vim.keymap.set("n", "<M-d>", ":bd<cr>", {desc="Delete buffer"})
 
+
+
 -- Visial mode
 --- Move highlighted text
 local text_movements = {
-    ["J"] = {":m '>+1<CR>gv=gv", "Move highlighted down"},
-    ["K"] = {":m '<-2<CR>gv=gv", "Move highlighted up"},
+    mode = {"v"},
+    {"J", ":m '>+1<CR>gv=gv", desc="Move highlighted down"},
+    {"K", ":m '<-2<CR>gv=gv", desc= "Move highlighted up"},
 }
 
 -- Fast end line inserters in inset mode
@@ -91,25 +91,20 @@ local testing = {
 }
 
 local nerdtree = {
-    n = {
-        t = {":NvimTreeToggle <cr>", "NvimTreeToggle" },
-    }
+    "<leader>nt", ":NvimTreeToggle <cr>", "NvimTreeToggle"
 }
 
-local wk = require("which-key")
 local leader = {prefix = '<leader>'}
-local mode_i = {mode='i'}
-local mode_v = {mode='v'}
 
 wk.register(debugging, leader)
 wk.register(testing, leader)
-wk.register(nerdtree, leader)
-wk.register(search_and_replace, leader)
-wk.register(comments)
-wk.register(window_nav)
-wk.register(buffer_nav)
+wk.register(nerdtree)
+-- wk.register(search_and_replace, leader)
+-- wk.register(comments)
+-- wk.register(window_nav)
 wk.register(fast_inserts)
-wk.register(text_movements, mode_v)
+wk.add(text_movements)
+-- wk.register(buffer_nav)
 
 
 

@@ -67,8 +67,8 @@ alias docker_login="docker exec -it db bash"
 
 # Navigation 
 alias p='cd ~/alab/backuped/projects'
-
 alias dot='cd ~/programms/dotfiles'
+alias obs='nvim ~/programms/notes/notes/'
 
 # Vimrc 
 alias vim='nvim'
@@ -133,6 +133,9 @@ alias scps="source ~/alab/venvs/cps/bin/activate"
 
 
 alias ep="export PYTHONPATH=.:$PYTHONPATH"
+
+
+alias vpn="cd ~/alab/backuped/Kamila\ Jakubczaka\ PozaALAB"
 
 source ~/scripts/remind
 

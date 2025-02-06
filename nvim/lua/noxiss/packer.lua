@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use { "xiyaowong/nvim-transparent"}
+    use { "xiyaowong/nvim-transparent" }
 
     -- Harpoon
     use { "theprimeagen/harpoon" }
@@ -26,8 +26,8 @@ return require('packer').startup(function(use)
         branch = 'v3.x',
         requires = {
             --- Uncomment these if you want to manage LSP servers from neovim
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
             -- LSP Support
             { 'neovim/nvim-lspconfig' },
@@ -35,7 +35,22 @@ return require('packer').startup(function(use)
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-nvim-lsp' },
             { 'L3MON4D3/LuaSnip' },
-        }
+        },
+        settings = {
+            Lua = {
+                runtime = {
+                    -- Tell the language server which version of Lua you're using
+                    -- (most likely LuaJIT in the case of Neovim)
+                    version = 'LuaJIT',
+                },
+                diagnostics = {
+                    -- Get the language server to recognize the `vim` global
+                    globals = {
+                        'vim',
+                        'require'
+                    },
+                },
+            } }
     }
 
 
@@ -115,4 +130,5 @@ return require('packer').startup(function(use)
         }
     }
     use 'nvim-neotest/neotest-python'
+    use 'vim-scripts/AutoComplPop'
 end)
